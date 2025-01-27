@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de IMEI</title>
+    <link rel="stylesheet" href="/styles/styleIndex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Gerador de IMEI</h1>
+            <p>Gere números de IMEI válidos de forma rápida e fácil.</p>
+        </div>
+    </header>
+
+    <!-- Espaço para anúncio no topo -->
+    <div class="container">
+        <div class="ad-space">Espaço para Anúncio</div>
+    </div>
+
+    <main class="container">
+        <!-- Seção do Gerador -->
+        <section class="generator">
+            <h2>Gerar IMEI</h2>
+            <div class="input-group">
+                <input type="number" id="quantity" placeholder="Insira a quantidade de IMEIs (1-10)" min="1" max="10" required>
+                <button id="generate-btn">
+                    <i class="fas fa-cogs"></i> Gerar
+                </button>
+            </div>
+            <p id="error-message" class="error-message"></p>
+            <div class="results">
+                <textarea id="imei-results" readonly></textarea>
+                <div class="result-actions">
+                    <button id="copy-btn">
+                        <i class="fas fa-copy"></i> Copiar
+                    </button>
+                    <button id="clear-btn">
+                        <i class="fas fa-trash"></i> Limpar
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Espaço para anúncio entre seções -->
+        <div class="ad-space">Espaço para Anúncio</div>
+    </main>
+
+    <!-- Espaço para anúncio no rodapé -->
+    <div class="container">
+        <div class="ad-space">Espaço para Anúncio</div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Gerador de IMEI. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="/js/index.js"></script>
+</body>
+</html>
