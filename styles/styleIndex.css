@@ -209,6 +209,13 @@ header p {
 }
 
 /* Footer */
+
+.footer-alert{
+    max-width: 500px;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
 footer {
     background-color: var(--primary-color);
     color: #fff;
@@ -220,7 +227,7 @@ footer {
 
 footer p {
     margin: 0;
-    font-size: 0.9rem; /* Tamanho reduzido */
+    font-size: 0.7rem; /* Tamanho reduzido */
     opacity: 0.9;
 }
 
