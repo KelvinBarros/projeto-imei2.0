@@ -55,11 +55,12 @@ header p {
     background-color: var(--ad-space-color);
     height: 80px; /* Reduzido para telas menores */
     margin: 20px 0;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #666;
 }
 
@@ -211,10 +212,11 @@ header p {
 /* Footer */
 
 .footer-alert{
-    max-width: 500px;
+    max-width: 450px;
     margin: 10px;
     color: rgb(255, 255, 255);
     margin-bottom: 10px;
+    text-align: justify;
 }
 footer {
     background-color: var(--primary-color);
