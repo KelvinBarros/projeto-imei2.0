@@ -1,36 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de IMEI Online - Gere Números de IMEI Válidos</title>
-    <meta name="description" content="Gere números de IMEI válidos de forma rápida e fácil. Nosso gerador de IMEI é perfeito para testes e desenvolvimento. Experimente agora!">
-    <meta name="keywords" content="gerador imei, imei válido, gerar imei, imei online">
+    <title>Gerador de IMEI Online - Gere Números Válidos</title>
+    <meta name="description" content="Gere números de IMEI válidos instantaneamente usando algoritmo Luhn. Ferramenta 100% gratuita para desenvolvedores e testadores.">
+    <meta name="keywords" content="gerador imei, imei válido, algoritmo luhn, número imei, teste imei">
+    <meta name="author" content="Kelvin B. Dutra">
     <meta name="google-site-verification" content="Ab1FKY0Rq8OzUuNx8Sd4zMb-0XkbjzplpvWPFxWFlwA" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5518352195116170"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5518352195116170" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favicon/favicon_io (3)/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="/styles/styleIndex.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Gerador de IMEI</h1>
-            <p>Gere números de IMEI válidos de forma rápida e fácil.</p>
+        <div class="header-bg"></div>
+        <div class="container header-container">
+            <div class="header-content">
+                <h1>Gerador de IMEI Online</h1>
+                <p class="subtitle">Gerador Oficial • Validação Luhn • Resultados Instantâneos</p>
+                <div class="header-badges">
+                    <span class="badge"><i class="fas fa-shield-alt"></i> Seguro</span>
+                    <span class="badge"><i class="fas fa-bolt"></i> Rápido</span>
+                    <span class="badge"><i class="fas fa-infinity"></i> Ilimitado</span>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- Espaço para anúncio no topo -->
-    
-
+    <div class="container">
+        <div class="ad-section">
+            <div class="ad-label">Publicidade</div>
+            <div class="ad-space"></div>
+        </div>
     </div>
 
     <main class="container">
         <section class="generator">
             <h2>Gerar IMEI</h2>
             <div class="input-group">
-                <input type="number" id="quantity" placeholder="Insira a quantidade de IMEIs (1-10)" min="1" max="10" required>
+                <input type="number" id="quantity" placeholder="Quantidade de IMEIs (1-10)" min="1" max="10" required>
                 <button id="generate-btn">
-                    <i class="fas fa-cogs"></i> Gerar
+                    <i class="fas fa-cogs"></i> Gerar Agora
                 </button>
             </div>
             <p id="error-message" class="error-message"></p>
@@ -46,64 +59,71 @@
                 </div>
             </div>
         </section>
-    
+
         <section class="faq">
             <h3>Perguntas Frequentes</h3>
             <div class="faq-item">
-                <h4>O que é um IMEI?</h4>
-                <p>O IMEI (International Mobile Equipment Identity) é um número único que identifica dispositivos móveis. Ele é usado por operadoras para identificar dispositivos válidos e pode ser usado para bloquear dispositivos roubados.</p>
+                <h4>Como funciona a validação do IMEI?</h4>
+                <p>Usamos o algoritmo Luhn para garantir que cada IMEI gerado seja matematicamente válido, seguindo os padrões internacionais de certificação.</p>
             </div>
             <div class="faq-item">
-                <h4>Para que serve o gerador de IMEI?</h4>
-                <p>O gerador de IMEI é útil para desenvolvedores e testadores que precisam de números de IMEI válidos para testes e desenvolvimento de software.</p>
+                <h4>Posso usar esses IMEIs em dispositivos reais?</h4>
+                <p>Não recomendamos o uso em dispositivos ativos. Esses números são para fins de teste e desenvolvimento de software.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Quantos IMEIs posso gerar por vez?</h4>
+                <p>Você pode gerar até 10 IMEIs simultaneamente para garantir o uso responsável da ferramenta.</p>
             </div>
         </section>
     </main>
 
-    <!-- Espaço para anúncio no rodapé -->
     <div class="container">
-        <div class="ad-space"><p>Cada parte da sequência numérica do IMEI traz informações específicas, como o fabricante, o modelo do dispositivo e um código único de identificação. Essa estrutura detalhada facilita o trabalho das operadoras e autoridades na gestão e rastreamento de dispositivos, contribuindo para um ambiente móvel maior.
-                </p></div>
+        <div class="ad-section">
+            <div class="ad-label">Publicidade</div>
+            <div class="ad-space"></div>
+        </div>
     </div>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Sobre Nós</h4>
-                <p>Somos uma plataforma dedicada a fornecer ferramentas úteis para desenvolvedores e entusiastas de tecnologia. Nosso gerador de IMEI é seguro, confiável e fácil de usar.</p>
-            </div>
-    
-            <div class="footer-section">
-                <h4>Links Úteis</h4>
+        <div class="footer-grid container">
+            <div class="footer-col">
+                <h4>Recursos</h4>
                 <ul>
-                    <li><a href="/politica-de-privacidade">Política de Privacidade</a></li>
-                    <li><a href="/termos-de-uso">Termos de Uso</a></li>
-                    <li><a href="/contato">Contato</a></li>
-                    <li><a href="/faq">Perguntas Frequentes</a></li>
+                    <li><a href="/blog">Blog Técnico</a></li>
+                    <li><a href="/validar-imei">Validador IMEI</a></li>
+                    <li><a href="/tutoriais">Guia de Uso</a></li>
                 </ul>
             </div>
-    
-            <div class="footer-section">
-                <h4>Redes Sociais</h4>
+            
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="/privacidade">Política de Privacidade</a></li>
+                    <li><a href="/termos">Termos de Serviço</a></li>
+                    <li><a href="/cookies">Gestão de Cookies</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> suporte@geradorimei.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, Brasil</p>
+                </div>
                 <div class="social-links">
-                    <a href="https://facebook.com/seu-site" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://twitter.com/seu-site" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://instagram.com/seu-site" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://linkedin.com/in/seu-site" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/seuuser" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/seuperfil" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/seuuser" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
         </div>
-    
-        <div class="footer-alert">
-            <p>
-                Nosso gerador de IMEI é uma ferramenta destinada a fins legítimos, como testes, desenvolvimento e outras atividades lícitas. Ressaltamos a importância do uso consciente e ético desta ferramenta para garantir a integridade e confiança em suas práticas. <br>
-                Alertamos que o mau uso do gerador de IMEI para atividades ilegais, como clonagem de dispositivos ou outras práticas ilícitas, é estritamente proibido. Não nos responsabilizamos por quaisquer consequências legais que os usuários possam enfrentar ao violar leis ou regulamentações ao utilizar nossa ferramenta. <br>
-                Agradecemos pela compreensão e colaboração para garantir um uso responsável desta ferramenta.
-            </p>
+
+        <div class="footer-disclaimer">
+            <p>⚠️ Este site não armazena dados pessoais. Os IMEIs gerados não devem ser usados em dispositivos ativos. Consulte nossos <a href="/termos">Termos de Serviço</a> para mais informações.</p>
         </div>
-    
+
         <div class="footer-bottom">
-            <p>&copy; 2025 Gerador de IMEI. Todos os direitos reservados. Desenvolvido por <a href="https://seusite.com" target="_blank">Kelvin B. Dutra</a>.</p>
+            <p>© 2025 GeradorIMEI.com.br - CNPJ 00.000.000/0001-00 - <a href="/sitemap.xml">Mapa do Site</a></p>
         </div>
     </footer>
 
