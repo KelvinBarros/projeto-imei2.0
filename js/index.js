@@ -44,27 +44,24 @@ function showMessage(type, textKey) {
     
     setTimeout(() => {
         messageElement.classList.remove('show');
-    }, 3000);
+    }, 4000);
 }
 
 // Gerar IMEIs
 generateBtn.addEventListener('click', () => {
-    const quantity = parseInt(quantityInput.value);
+    // Pega o valor e converte para número (trata NaN e 0)
+    let quantity = parseInt(quantityInput.value) || 1;
+    const originalValue = quantity;
     
-    // Validações
-    if (isNaN(quantity)) {
-        showMessage('error', 'emptyField');
-        return;
-    }
-    
-    if (quantity > 10) {
-        showMessage('warning', 'maxLimit');
-        return;
-    }
-    
-    if (quantity < 1) {
+    // Limita entre 1 e 10
+    if (quantity < 1 || quantity > 10) {
         showMessage('error', 'invalidNumber');
         return;
+    }    
+    
+    if (quantity !== originalValue) {
+        quantityInput.value = quantity;
+        showMessage('warning', 'adjustedValue', { value: quantity });
     }
     
     // Geração dos IMEIs
@@ -102,11 +99,17 @@ function generateIMEI() {
 }
 
 function calculateLuhnCheckDigit(number) {
-    const sum = number.split('').reduce((acc, digit, index) => {
-        let num = parseInt(digit, 10);
-        num = index % 2 === 0 ? num * 2 : num;
-        return acc + (num > 9 ? num - 9 : num);
-    }, 0);
+    const digits = number.split('').reverse().map(Number);
+    let sum = 0;
     
-    return (sum * 9) % 10;
+    digits.forEach((digit, index) => {
+        if (index % 2 === 1) { // Dobra a cada segundo dígito (direita para esquerda)
+            digit *= 2;
+            sum += digit > 9 ? digit - 9 : digit;
+        } else {
+            sum += digit;
+        }
+    });
+    
+    return (10 - (sum % 10)) % 10;
 }
