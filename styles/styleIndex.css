@@ -369,6 +369,7 @@ footer {
     .header-container {
         padding: 3rem 0 2rem;
         margin-bottom: 30px;
+        max-height: 300px;
     }
     .header-content h1 {
         font-size: 2rem;
