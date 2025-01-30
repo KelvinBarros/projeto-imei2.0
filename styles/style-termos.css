@@ -30,7 +30,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 400px;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     z-index: 1;
 }
@@ -42,6 +42,8 @@ body {
     color: white;
     pointer-events: none; /* Permite interação com elementos abaixo */
 }
+
+
 
 .header-content h1 {
     font-size: 2.8rem;
@@ -68,6 +70,16 @@ body {
     backdrop-filter: blur(5px);
     border: 1px solid rgba(255,255,255,0.2);
     font-size: 0.9rem;
+}
+
+.header-content2{
+    color: black;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-weight: 600;
+    pointer-events: none; /* Permite interação com elementos abaixo */
+    
 }
 
 /* Página de Termos - Estilo Harmonizado */
