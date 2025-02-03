@@ -91,6 +91,7 @@ main.container {
     padding: 2rem;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     margin: auto;
+    margin-top: 50px;
 }
 
 .input-group {
@@ -393,4 +394,113 @@ footer {
     .footer-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/*  CSS DO VALIDADOR */
+
+
+/* Validador */
+.validator {
+    background: white;
+    width: 80%;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin: auto;
+    margin-top: 50px;
+}
+
+#imei-input {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#validate-btn {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    transform: translateY(0);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#validate-btn:hover {
+   
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(106, 17, 203, 0.3);
+    letter-spacing: 0.5px;
+}
+
+#validate-btn::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, 
+        transparent 25%,
+        rgba(255,255,255,0.1) 50%,
+        transparent 75%);
+    animation: shine 4s infinite;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#validate-btn:hover::after {
+    opacity: 1;
+}
+
+.result-message {
+    text-align: center;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.result-message.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.valid {
+    background: #e8f5e9;
+    color: #2e7d32;
+    border: 2px solid #4caf50;
+}
+
+.invalid {
+    background: #ffebee;
+    color: #c62828;
+    border: 2px solid #ef5350;
+}
+
+/* Footer Simplificado */
+.simplified-footer {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+
+    color: white;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.simplified-footer nav {
+    margin-top: 1rem;
+}
+
+.simplified-footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
 }

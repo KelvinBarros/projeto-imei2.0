@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar IMEI - Gerador de IMEI</title>
+    <meta name="description" content="Valide números de IMEI usando o algoritmo Luhn. Verifique a autenticidade de IMEIs instantaneamente.">
+    <link rel="stylesheet" href="/styles/styleIndex.css">
+    <link rel="shortcut icon" href="/favicon/favicon_io (3)/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-bg"></div>
+        <div class="container header-container">
+            <div class="header-content">
+                <h1>Verificador de IMEI</h1>
+                <p class="subtitle">Verificação Instantânea • Algoritmo Luhn</p>
+                <div class="header-badges">
+                    <span class="badge"><i class="fas fa-shield-alt"></i> Seguro</span>
+                    <span class="badge"><i class="fas fa-bolt"></i> Rápido</span>
+                    <span class="badge"><i class="fas fa-infinity"></i> Ilimitado</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="validator">
+            <h2>Validar IMEI</h2>
+            <div class="input-group">
+                <input 
+                    type="text" 
+                    id="imei-input" 
+                    placeholder="Insira o IMEI para validação"
+                    maxlength="15"
+                    required
+                >
+                <button id="validate-btn">
+                    <i class="fas fa-check-circle"></i> Validar
+                </button>
+            </div>
+            <div id="validation-result" class="result-message"></div>
+        </section>
+
+        <section class="faq">
+            <h3>Como Funciona?</h3>
+            <div class="faq-item">
+                <h4>O que é um IMEI válido?</h4>
+                <p>Um IMEI válido possui 15 dígitos e passa pela verificação do algoritmo Luhn.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Como usar o validador?</h4>
+                <p>Insira o número completo do IMEI (15 dígitos) no campo acima e clique em "Validar".</p>
+            </div>
+        </section>
+         <section class="seo-content">
+            <h2>Por que validar seu IMEI?</h2>
+            <div class="content-block">
+                <p>Validar seu número IMEI é essencial para:</p>
+                <ul>
+                    <li>Verificar a autenticidade de dispositivos móveis</li>
+                    <li>Identificar produtos contrafeitos</li>
+                    <li>Garantir a elegibilidade para garantia</li>
+                    <li>Prevenir fraudes em transações de usados</li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h3>Como funciona a validação?</h3>
+                <p>Nosso sistema utiliza o <strong>algoritmo Luhn</strong>, mesmo método empregado por fabricantes e operadoras para:</p>
+                <ol>
+                    <li>Calcular o dígito verificador</li>
+                    <li>Detectar erros de digitação</li>
+                    <li>Identificar sequências inválidas</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <footer class="simplified-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2025 Gerador de IMEI. Todos os direitos reservados.</p>
+            <nav>
+                <a href="">Gerar IMEI</a> |
+                <a href="">Privacidade</a> |
+                <a href="/termos-de-uso">Termos</a>
+            </nav>
+        </div>
+    </footer>
+
+        <script src="/js/validador.js"></script>
+</body>
+</html>
