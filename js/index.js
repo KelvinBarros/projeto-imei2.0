@@ -62,7 +62,7 @@ generateBtn.addEventListener('click', () => {
     if (quantity !== originalValue) {
         quantityInput.value = quantity;
         showMessage('warning', 'adjustedValue', { value: quantity });
-    }
+    } 
     
     // Geração dos IMEIs
     results.value = Array.from({length: quantity}, () => generateIMEI()).join('\n');
